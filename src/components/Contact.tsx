@@ -75,7 +75,7 @@ export default function Contact({
   const isLoading = formState === "loading";
 
   const fieldClassName =
-    "w-full rounded-[1.65rem] border border-white/8 bg-black/25 px-5 py-4 text-sm text-white placeholder:text-white/25 outline-none transition-all duration-300 focus:border-accent/40 focus:bg-black/40 focus:shadow-[0_0_0_4px_rgba(52,211,153,0.08)] disabled:cursor-not-allowed disabled:opacity-70";
+    "w-full rounded-[1.65rem] border border-white/[0.12] bg-white/[0.05] px-5 py-4 text-sm text-white placeholder:text-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:bg-white/[0.07] focus:shadow-[0_0_0_4px_rgba(52,211,153,0.1)] disabled:cursor-not-allowed disabled:opacity-70";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -202,7 +202,7 @@ export default function Contact({
             </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-[2.35rem] border border-white/10 bg-surface-light/45 p-7 backdrop-blur-xl md:p-10 xl:p-12">
+            <div className="relative overflow-hidden rounded-[2.35rem] border border-white/[0.1] bg-white/[0.04] p-7 backdrop-blur-xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)] md:p-10 xl:p-12">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               <div className="absolute inset-y-0 right-0 w-40 bg-accent/5 blur-3xl pointer-events-none" />
 

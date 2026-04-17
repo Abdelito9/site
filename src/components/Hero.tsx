@@ -91,7 +91,7 @@ export default function Hero({ data, siteSettings }: HeroProps) {
             <MagneticButton
               href="#contact"
               ariaLabel={primaryLabel}
-              className="rounded-full border border-transparent bg-white px-6 py-3.5 text-[15px] font-semibold text-background shadow-[0_8px_30px_-10px_rgba(255,255,255,0.3)] transition-colors duration-300 hover:bg-accent hover:-translate-y-[1px]"
+              className="rounded-full bg-accent px-6 py-3.5 text-[15px] font-semibold text-background shadow-[0_0_30px_-6px_rgba(52,211,153,0.6)] transition-all duration-300 hover:bg-accent/80 hover:shadow-[0_0_40px_-6px_rgba(52,211,153,0.8)] hover:-translate-y-[1px]"
             >
               <span>{primaryLabel}</span>
               <span className="ml-1 flex h-6 w-6 items-center justify-center rounded-full bg-black/10 transition-transform duration-300 group-hover:translate-x-[2px]">
@@ -172,7 +172,7 @@ export default function Hero({ data, siteSettings }: HeroProps) {
               ease: "easeInOut", 
               repeat: Infinity 
             }}
-            className="relative transform-style-3d w-full aspect-[4/5] rounded-[2.5rem] border border-white/10 bg-surface/40 backdrop-blur-xl shadow-2xl p-6"
+            className="relative transform-style-3d w-full aspect-[4/5] rounded-[2.5rem] border border-white/[0.12] bg-surface/60 backdrop-blur-xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.9),0_0_0_1px_rgba(255,255,255,0.05)] p-6"
           >
             {/* Visual content representing digital work */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-[2.5rem] pointer-events-none" />
