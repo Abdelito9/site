@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a static [Next.js](https://nextjs.org) site prepared for GitHub Pages and editable through [Pages CMS](https://pagescms.org/).
 
-## Getting Started
+## What Changed
 
-First, run the development server:
+- The old server-side CMS setup has been removed.
+- The website content now lives in JSON files inside `src/content/`.
+- GitHub Pages deployment is automated with [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
+- The repository includes a [`.pages.yml`](./.pages.yml) configuration so Pages CMS can edit the site directly on GitHub.
+
+## Local Setup
+
+Copy `.env.example` to `.env.local`:
+
+```bash
+cp .env.example .env.local
+```
+
+The only optional variable is:
+
+- `NEXT_PUBLIC_CONTACT_FORM_ENDPOINT`: external form endpoint if you want the contact form to submit to a service
+
+If this variable is empty, the contact form opens the visitor's email app with a prefilled message.
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Editable Content
+
+- `src/content/site.json`: branding, navigation, footer, social links
+- `src/content/pages/*.json`: pages and page-builder blocks
+- `public/media/`: uploaded images referenced by the content files
+
+The current block types are:
+
+- `hero`
+- `services`
+- `portfolio`
+- `process`
+- `testimonials`
+- `contact`
+
+## Pages CMS
+
+Once the repo is on GitHub:
+
+1. Open `https://pagescms.org/`
+2. Sign in with GitHub
+3. Select this repository
+4. Pages CMS will read `.pages.yml`
+5. Edit content visually and commit changes back to the repo
+
+More detail is available in [PAYLOAD_SETUP.md](./PAYLOAD_SETUP.md).
+
+## Deploy to GitHub Pages
+
+1. Push the repository to GitHub.
+2. In GitHub, go to `Settings > Pages`.
+3. Set `Source` to `GitHub Actions`.
+4. Push to `main`.
+
+The workflow builds the static export and publishes the `out/` folder automatically.
+
+## Useful Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run lint
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,0 +1,154 @@
+{
+  "metaDescription": "Prisme concoit des experiences digitales sur mesure pour les entreprises ambitieuses.",
+  "metaTitle": "Prisme - Studio Digital",
+  "slug": "home",
+  "title": "Accueil",
+  "blocks": [
+    {
+      "blockType": "hero",
+      "badge": "Studio Digital Independant",
+      "headingStart": "Nous creons des",
+      "scramblePhrases": [
+        { "phrase": "Sites Vitrines" },
+        { "phrase": "Experiences" },
+        { "phrase": "Applications Web" },
+        { "phrase": "E-commerces" }
+      ],
+      "headingEnd": "qui convertissent.",
+      "description": "Prisme est une agence creative specialisee dans le design et le developpement d'interfaces premium. Nous combinons esthetique minimaliste et ingenierie de pointe.",
+      "primaryCtaLabel": "Demarrez votre projet",
+      "secondaryCtaLabel": "Voir notre reel",
+      "socialProofTitle": "Rejoignez 40+ entreprises",
+      "socialProofSubtitle": "qui nous ont fait confiance."
+    },
+    {
+      "blockType": "services",
+      "badge": "Expertise",
+      "heading": "L'ingenierie rencontre le design.",
+      "description": "Nous ne faisons pas de templates. Chaque ligne de code et chaque pixel sont concus sur mesure pour elever votre entreprise au-dessus de la masse.",
+      "items": [
+        {
+          "desc": "Interfaces immersives et parcours utilisateurs optimises pour la conversion.",
+          "icon": "PaintBrush",
+          "title": "Design UI/UX"
+        },
+        {
+          "desc": "Sites stables, rapides et scalables utilisant les dernieres technologies.",
+          "icon": "Code",
+          "title": "Developpement Web"
+        },
+        {
+          "desc": "Accompagnement de A a Z pour positionner votre marque avec impact.",
+          "icon": "Strategy",
+          "title": "Strategie Digitale"
+        },
+        {
+          "desc": "Optimisation technique pour une visibilite maximale sur les moteurs.",
+          "icon": "Lightning",
+          "title": "SEO & Performance"
+        }
+      ]
+    },
+    {
+      "blockType": "portfolio",
+      "heading": "Travaux Recents",
+      "projects": [
+        {
+          "category": "Web App & Dashboard",
+          "title": "Aura FinTech",
+          "image": "https://picsum.photos/seed/project-0/1200/800"
+        },
+        {
+          "category": "E-Commerce Luxe",
+          "title": "Maison Nuance",
+          "image": "https://picsum.photos/seed/project-1/1200/800"
+        },
+        {
+          "category": "SaaS Landing Page",
+          "title": "Oxygene AI",
+          "image": "https://picsum.photos/seed/project-2/1200/800"
+        }
+      ]
+    },
+    {
+      "blockType": "process",
+      "description": "Une methodologie rigoureuse pour des resultats d'exception.",
+      "heading": "Notre Processus",
+      "steps": [
+        {
+          "desc": "Nous analysons votre marche, vos objectifs et votre audience. C'est ici que l'architecture de l'information et la direction artistique sont definies.",
+          "num": "01",
+          "title": "Strategie & Decouverte"
+        },
+        {
+          "desc": "Creation de maquettes haute-fidelite. Nous utilisons des typographies premium, des grilles asymetriques et definissons les micro-interactions.",
+          "num": "02",
+          "title": "Design UX/UI"
+        },
+        {
+          "desc": "Integration pixel-perfect avec React et Next.js. Animations fluides via Framer Motion pour une performance irreprochable.",
+          "num": "03",
+          "title": "Developpement Creatif"
+        },
+        {
+          "desc": "Deploiement, optimisation SEO technique et formation sur votre nouveau CMS. Votre plateforme est prete a convertir.",
+          "num": "04",
+          "title": "Lancement & Evolution"
+        }
+      ]
+    },
+    {
+      "blockType": "testimonials",
+      "heading": "Ils parlent pour nous",
+      "items": [
+        {
+          "author": "Elara Vance",
+          "quote": "Prisme n'a pas juste cree notre site, ils ont redefini notre image de marque.",
+          "role": "CEO, Aura FinTech"
+        },
+        {
+          "author": "Julian Rossi",
+          "quote": "Une comprehension technique rare couplee a un oeil esthetique incroyable.",
+          "role": "Directeur Digital, Maison Nuance"
+        },
+        {
+          "author": "Marcus Chen",
+          "quote": "Leur maitrise de Next.js a permis a notre portfolio de se demarquer immediatement.",
+          "role": "Architecte Associe, Luminate"
+        }
+      ]
+    },
+    {
+      "blockType": "contact",
+      "companyLabel": "Entreprise",
+      "companyPlaceholder": "Luminate HQ",
+      "description": "Parlez-nous de votre projet. Nous selectionnons nos collaborations avec soin pour garantir un niveau de qualite intransigeant.",
+      "email": "hello@prisme-studio.com",
+      "emailFieldLabel": "Email professionnel",
+      "emailLabel": "Email direct",
+      "emailPlaceholder": "elodie@luminate.com",
+      "headingAccent": "redefinir",
+      "headingEnd": "votre image ?",
+      "headingStart": "Pret a",
+      "loadingLabel": "Preparation du message...",
+      "location": "Paris, France (Remote WWD)",
+      "locationLabel": "Localisation",
+      "messageLabel": "Details du projet",
+      "messagePlaceholder": "Decrivez brievement vos objectifs...",
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Elodie Dubois",
+      "budgetLabel": "Budget estime",
+      "budgetPlaceholder": "Selectionner une fourchette",
+      "budgetOptions": [
+        { "label": "5kEUR - 10kEUR", "value": "5k-10k" },
+        { "label": "10kEUR - 25kEUR", "value": "10k-25k" },
+        { "label": "25kEUR - 50kEUR", "value": "25k-50k" },
+        { "label": "50kEUR+", "value": "50k-plus" }
+      ],
+      "submitLabel": "Preparer le message",
+      "successDescription": "Ton message est pret. Confirme l'envoi dans ton application email.",
+      "successTitle": "Email prepare",
+      "resetLabel": "Preparer un autre message"
+    }
+  ]
+}

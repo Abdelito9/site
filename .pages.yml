@@ -1,0 +1,317 @@
+media:
+  input: public/media
+  output: /media
+
+content:
+  - name: site
+    label: Parametres du site
+    type: file
+    path: src/content/site.json
+    format: json
+    fields:
+      - name: brandMark
+        label: Monogramme
+        type: string
+      - name: brandName
+        label: Nom de marque
+        type: string
+      - name: navigationCtaLabel
+        label: Label CTA navigation
+        type: string
+      - name: navigationLinks
+        label: Liens navigation
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Lien
+            type: string
+      - name: footerNavigationTitle
+        label: Titre navigation footer
+        type: string
+      - name: footerSocialTitle
+        label: Titre reseaux footer
+        type: string
+      - name: footerDescription
+        label: Description footer
+        type: text
+      - name: footerBackgroundWord
+        label: Mot de fond
+        type: string
+      - name: copyrightName
+        label: Nom copyright
+        type: string
+      - name: footerLegalLinks
+        label: Liens legaux
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Lien
+            type: string
+      - name: socialLinks
+        label: Reseaux sociaux
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: Lien
+            type: string
+          - name: icon
+            label: Icone
+            type: string
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: src/content/pages
+    format: json
+    filename:
+      template: "{slug}.json"
+      field: create
+    view:
+      primary: title
+      fields: [title, slug]
+      sort: [title, slug]
+    fields:
+      - name: title
+        label: Titre
+        type: string
+      - name: slug
+        label: Slug
+        type: string
+      - name: metaTitle
+        label: Meta title
+        type: string
+      - name: metaDescription
+        label: Meta description
+        type: text
+      - name: blocks
+        label: Blocs
+        type: block
+        list: true
+        blockKey: blockType
+        blocks:
+          - name: hero
+            label: Hero
+            fields:
+              - name: badge
+                label: Badge
+                type: string
+              - name: headingStart
+                label: Debut du titre
+                type: string
+              - name: scramblePhrases
+                label: Phrases animees
+                type: object
+                list: true
+                fields:
+                  - name: phrase
+                    label: Phrase
+                    type: string
+              - name: headingEnd
+                label: Fin du titre
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: primaryCtaLabel
+                label: CTA principal
+                type: string
+              - name: secondaryCtaLabel
+                label: CTA secondaire
+                type: string
+              - name: socialProofTitle
+                label: Titre preuve sociale
+                type: string
+              - name: socialProofSubtitle
+                label: Sous-titre preuve sociale
+                type: string
+          - name: services
+            label: Services
+            fields:
+              - name: badge
+                label: Badge
+                type: string
+              - name: heading
+                label: Titre
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: items
+                label: Services
+                type: object
+                list: true
+                fields:
+                  - name: title
+                    label: Titre
+                    type: string
+                  - name: desc
+                    label: Description
+                    type: text
+                  - name: icon
+                    label: Icone
+                    type: string
+          - name: portfolio
+            label: Portfolio
+            fields:
+              - name: heading
+                label: Titre
+                type: string
+              - name: projects
+                label: Projets
+                type: object
+                list: true
+                fields:
+                  - name: title
+                    label: Titre
+                    type: string
+                  - name: category
+                    label: Categorie
+                    type: string
+                  - name: image
+                    label: Image
+                    type: image
+                    options:
+                      path: portfolio
+          - name: process
+            label: Processus
+            fields:
+              - name: heading
+                label: Titre
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: steps
+                label: Etapes
+                type: object
+                list: true
+                fields:
+                  - name: num
+                    label: Numero
+                    type: string
+                  - name: title
+                    label: Titre
+                    type: string
+                  - name: desc
+                    label: Description
+                    type: text
+          - name: testimonials
+            label: Temoignages
+            fields:
+              - name: heading
+                label: Titre
+                type: string
+              - name: items
+                label: Temoignages
+                type: object
+                list: true
+                fields:
+                  - name: quote
+                    label: Citation
+                    type: text
+                  - name: author
+                    label: Auteur
+                    type: string
+                  - name: role
+                    label: Role
+                    type: string
+                  - name: avatar
+                    label: Avatar
+                    type: image
+                    options:
+                      path: testimonials
+          - name: contact
+            label: Contact
+            fields:
+              - name: headingStart
+                label: Debut du titre
+                type: string
+              - name: headingAccent
+                label: Mot accent
+                type: string
+              - name: headingEnd
+                label: Fin du titre
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: emailLabel
+                label: Label email direct
+                type: string
+              - name: email
+                label: Email
+                type: string
+              - name: locationLabel
+                label: Label localisation
+                type: string
+              - name: location
+                label: Localisation
+                type: string
+              - name: nameLabel
+                label: Label nom
+                type: string
+              - name: namePlaceholder
+                label: Placeholder nom
+                type: string
+              - name: companyLabel
+                label: Label entreprise
+                type: string
+              - name: companyPlaceholder
+                label: Placeholder entreprise
+                type: string
+              - name: emailFieldLabel
+                label: Label champ email
+                type: string
+              - name: emailPlaceholder
+                label: Placeholder champ email
+                type: string
+              - name: budgetLabel
+                label: Label budget
+                type: string
+              - name: budgetPlaceholder
+                label: Placeholder budget
+                type: string
+              - name: budgetOptions
+                label: Options budget
+                type: object
+                list: true
+                fields:
+                  - name: label
+                    label: Label
+                    type: string
+                  - name: value
+                    label: Valeur
+                    type: string
+              - name: messageLabel
+                label: Label message
+                type: string
+              - name: messagePlaceholder
+                label: Placeholder message
+                type: text
+              - name: submitLabel
+                label: Label bouton
+                type: string
+              - name: loadingLabel
+                label: Label chargement
+                type: string
+              - name: successTitle
+                label: Titre succes
+                type: string
+              - name: successDescription
+                label: Description succes
+                type: text
+              - name: resetLabel
+                label: Label reset
+                type: string

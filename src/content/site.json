@@ -1,0 +1,25 @@
+{
+  "brandMark": "P",
+  "brandName": "Prisme",
+  "copyrightName": "Prisme Studio",
+  "footerBackgroundWord": "PRISME",
+  "footerDescription": "Studio creatif independant. Nous construisons des presences digitales qui transcendent les standards de l'industrie pour les entreprises audacieuses.",
+  "footerLegalLinks": [
+    { "href": "#", "label": "Mentions legales" },
+    { "href": "#", "label": "Politique de confidentialite" }
+  ],
+  "footerNavigationTitle": "Studio",
+  "footerSocialTitle": "Reseaux",
+  "navigationCtaLabel": "Lancer un projet",
+  "navigationLinks": [
+    { "href": "#services", "label": "Services" },
+    { "href": "#portfolio", "label": "Portfolio" },
+    { "href": "#processus", "label": "Processus" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "socialLinks": [
+    { "href": "#", "icon": "TwitterLogo", "label": "Twitter" },
+    { "href": "#", "icon": "LinkedinLogo", "label": "LinkedIn" },
+    { "href": "#", "icon": "GithubLogo", "label": "GitHub" }
+  ]
+}
