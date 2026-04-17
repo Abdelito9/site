@@ -65,7 +65,7 @@ export default function Footer({
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col items-start gap-6">
             <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
                 <span className="text-[#050505] font-bold text-sm">{brandMark || "P"}</span>
               </div>
               <span className="text-xl font-semibold tracking-tight text-white">{brandName || "Prisme"}</span>

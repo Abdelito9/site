@@ -54,7 +54,7 @@ export default function MagneticButton({
     >
       <Tag
         aria-label={ariaLabel}
-        className={`group relative inline-flex items-center gap-2 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.97] ${className}`}
+        className={`group relative inline-flex items-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.97] ${className}`}
         onClick={onClick}
         {...linkProps}
       >

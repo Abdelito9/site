@@ -91,7 +91,7 @@ export default function Hero({ data, siteSettings }: HeroProps) {
             <MagneticButton
               href="#contact"
               ariaLabel={primaryLabel}
-              className="rounded-full border border-white/10 bg-gradient-to-b from-white to-white/90 px-6 py-3.5 text-[15px] font-semibold text-background shadow-[0_20px_50px_-20px_rgba(255,255,255,0.85)] hover:-translate-y-[1px] hover:bg-white"
+              className="rounded-full border border-transparent bg-white px-6 py-3.5 text-[15px] font-semibold text-background shadow-[0_8px_30px_-10px_rgba(255,255,255,0.3)] transition-colors duration-300 hover:bg-accent hover:-translate-y-[1px]"
             >
               <span>{primaryLabel}</span>
               <span className="ml-1 flex h-6 w-6 items-center justify-center rounded-full bg-black/10 transition-transform duration-300 group-hover:translate-x-[2px]">

@@ -297,6 +297,7 @@ export default function Contact({
                     name="budget"
                     defaultValue=""
                     disabled={isLoading}
+                    style={{ colorScheme: "dark" }}
                     className={`${fieldClassName} appearance-none pr-14`}
                   >
                     <option value="" disabled className="bg-surface text-white/20">
@@ -341,9 +342,8 @@ export default function Contact({
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-gradient-to-b from-white to-white/90 px-6 py-4 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-accent focus:outline-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
+                className="group relative mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-transparent bg-white px-6 py-4 text-sm font-semibold text-black transition-colors duration-300 hover:bg-accent hover:-translate-y-[1px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
               >
-                <span className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-black/20 to-transparent" />
                 {isLoading ? (
                   <>
                     <span className="w-5 h-5 border-2 border-black/20 border-t-black rounded-full animate-spin" />

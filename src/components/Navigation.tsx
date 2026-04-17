@@ -65,7 +65,7 @@ export default function Navigation({ brandName, brandMark, links, ctaLabel }: Na
             <MagneticButton
               href="#contact"
               ariaLabel={buttonLabel}
-              className="rounded-full border border-white/10 bg-gradient-to-b from-white to-white/90 px-4 py-1.5 text-[13px] font-medium text-background shadow-[0_10px_30px_-15px_rgba(255,255,255,0.8)] hover:-translate-y-[1px] hover:bg-white"
+              className="rounded-full border border-transparent bg-white px-4 py-1.5 text-[13px] font-medium text-background transition-colors duration-300 hover:bg-accent"
             >
               <span>{buttonLabel}</span>
               <span className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/10 transition-transform duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]">
