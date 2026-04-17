@@ -65,13 +65,13 @@ function TiltCard({ project }: { project: ProjectItem }) {
         style={{ transform: "translateZ(50px)" }}
         className="absolute bottom-10 left-10 right-10"
       >
-        <div className="overflow-hidden mb-2">
-          <p className="text-accent text-sm font-medium tracking-widest uppercase origin-bottom translate-y-full opacity-0 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-y-0 group-hover:opacity-100">
+        <div className="mb-2">
+          <p className="text-accent text-sm font-medium tracking-widest uppercase transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
             {project.category}
           </p>
         </div>
-        <div className="overflow-hidden">
-          <h3 className="text-3xl md:text-5xl font-bold text-white origin-bottom translate-y-full opacity-0 transition-all duration-500 delay-75 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-y-0 group-hover:opacity-100">
+        <div>
+          <h3 className="text-3xl md:text-5xl font-bold text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
             {project.title}
           </h3>
         </div>

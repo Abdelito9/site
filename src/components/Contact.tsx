@@ -75,7 +75,7 @@ export default function Contact({
   const isLoading = formState === "loading";
 
   const fieldClassName =
-    "w-full rounded-[1.65rem] border border-white/[0.12] bg-white/[0.05] px-5 py-4 text-sm text-white placeholder:text-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:bg-white/[0.07] focus:shadow-[0_0_0_4px_rgba(52,211,153,0.1)] disabled:cursor-not-allowed disabled:opacity-70";
+    "w-full rounded-[1.65rem] border border-white/20 bg-[#1a1a1a] px-5 py-4 text-sm text-white placeholder:text-white/30 outline-none transition-all duration-300 focus:border-accent/60 focus:bg-[#1e1e1e] focus:shadow-[0_0_0_4px_rgba(52,211,153,0.1)] disabled:cursor-not-allowed disabled:opacity-70";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -138,7 +138,7 @@ export default function Contact({
       <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-white/[0.03] to-transparent pointer-events-none" />
 
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-        <div className="relative overflow-hidden rounded-[2.75rem] border border-white/8 bg-white/[0.02] px-6 py-8 shadow-[0_25px_80px_-40px_rgba(0,0,0,0.7)] backdrop-blur-[2px] md:px-8 md:py-10 xl:px-10 xl:py-12">
+        <div className="relative overflow-hidden rounded-[2.75rem] border border-white/[0.08] bg-[#090909] px-6 py-8 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)] md:px-8 md:py-10 xl:px-10 xl:py-12">
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
           <div className="absolute inset-y-0 left-[44%] hidden w-px bg-gradient-to-b from-transparent via-white/8 to-transparent xl:block" />
 
@@ -202,7 +202,7 @@ export default function Contact({
             </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-[2.35rem] border border-white/[0.1] bg-white/[0.04] p-7 backdrop-blur-xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)] md:p-10 xl:p-12">
+            <div className="relative overflow-hidden rounded-[2.35rem] border border-white/[0.1] bg-[#111111] p-7 md:p-10 xl:p-12">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               <div className="absolute inset-y-0 right-0 w-40 bg-accent/5 blur-3xl pointer-events-none" />
 
